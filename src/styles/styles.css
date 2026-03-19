@@ -39,6 +39,11 @@ header {
     font-weight: bold;
 }
 
+.search {
+    background-color: #3c33eb;
+    color: #d9d7fa;
+}
+
 main {
     color: #d9d7fa;
     display: flex;
