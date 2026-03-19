@@ -19,9 +19,9 @@ header {
     text-shadow: rgba(255, 255, 255, 0.281) 2px 2px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu {
@@ -54,6 +54,11 @@ main {
 
 #ifro {
     color: rgb(27, 134, 27);
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
 }
 
 .tit {
