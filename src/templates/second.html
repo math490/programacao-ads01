@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELES - ADS</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            background-color: dodgerblue;
+            padding: 5px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: white;
+            text-align: center;
+            min-height: 15vh;
+        }
+
+        main {
+            display: grid;
+            grid-area: main;
+            grid-template-areas:
+            "article article aside";
+            gap: 10px;
+            text-align: justify;
+            min-height: 60vh;
+        }
+
+        article {
+            grid-area: article;
+            background-color: white;
+            padding: 10px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: white;
+            padding: 10px;
+            min-width: 66vh;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: white;
+            text-align: center;
+            min-height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página Secundária</h1>
+        <h2>- Programação Web -</h2>
+    </header>
+    <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta autem, sit ex nobis placeat officia voluptas recusandae? Soluta voluptates possimus quidem deleniti eaque reprehenderit ipsum quaerat laborum neque adipisci!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est quasi voluptatem commodi rerum quo, autem sapiente facilis eum accusamus eos laboriosam eaque a fuga nam voluptatibus aspernatur vitae quas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
+        </article>
+        <aside>
+            <ul>
+                <li><a href="../../index.html">Página Principal;</a></li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>2026 <strong>- Matheus Teles de Andrade -</strong> &copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
