@@ -1,0 +1,84 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 5px;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    text-align: center;
+    min-height: 15vh;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+    grid-template-areas:
+    "article aside";
+    gap: 10px;
+    text-align: justify;
+    min-height: 60vh;
+}
+
+article {
+    grid-area: article;
+    padding: 10px;
+    background: url(../img/Satoru-Gojo-Jujutsu-Kaisen.png);
+    color: rgb(189, 241, 241);
+    font-weight: bold;
+}
+
+article .blur {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    background-image: url(../img/suguru.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    min-width: 30vh;
+}
+
+aside ul {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+ul a {
+    color: red;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 2px;
+}

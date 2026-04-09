@@ -1,68 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/second.css">
     <title>TELES - ADS</title>
-    <style>
-        body {
-            display: grid;
-            grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer";
-            grid-template-columns: 1fr 3fr;
-            gap: 10px;
-            background-color: dodgerblue;
-            padding: 5px;
-        }
 
-        header {
-            grid-area: header;
-            background-color: white;
-            text-align: center;
-            min-height: 15vh;
-        }
-
-        main {
-            display: grid;
-            grid-area: main;
-            grid-template-areas:
-            "article article aside";
-            gap: 10px;
-            text-align: justify;
-            min-height: 60vh;
-        }
-
-        article {
-            grid-area: article;
-            background-color: white;
-            padding: 10px;
-        }
-
-        aside {
-            grid-area: aside;
-            background-color: white;
-            padding: 10px;
-            min-width: 66vh;
-        }
-
-        footer {
-            grid-area: footer;
-            background-color: white;
-            text-align: center;
-            min-height: 20vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer p {
-            margin: 2px;
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -71,11 +15,25 @@
     </header>
     <main>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta autem, sit ex nobis placeat officia voluptas recusandae? Soluta voluptates possimus quidem deleniti eaque reprehenderit ipsum quaerat laborum neque adipisci!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est quasi voluptatem commodi rerum quo, autem sapiente facilis eum accusamus eos laboriosam eaque a fuga nam voluptatibus aspernatur vitae quas.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tenetur expedita rerum, quidem animi unde architecto suscipit ex officia est debitis sint quod modi ratione impedit iure earum facilis aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut explicabo rem atque eaque minima accusamus quis inventore nobis saepe, totam sed fuga, odio nam cupiditate! Consequuntur provident dolor dicta a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam in dolor expedita voluptas blanditiis sequi error. Dicta voluptatibus accusantium quas exercitationem magnam! Iure animi corporis eligendi quaerat, autem minus.</p>
+            <div class="blur">
+                <p>HTML, CSS e JavaScript são as três principais tecnologias usadas para criar páginas e aplicações na web. Cada uma tem um papel específico, e juntas formam a base do desenvolvimento front-end.
+
+                <p>O HTML (HyperText Markup Language) é a estrutura da página. Ele funciona como o “esqueleto” de um site, organizando o conteúdo por meio de elementos como títulos, parágrafos, imagens, links e tabelas. Com o HTML, você define o que aparece na página, mas não como isso será exibido visualmente.</p>
+
+                <p>O CSS (Cascading Style Sheets) é responsável pela aparência. Ele controla cores, fontes, tamanhos, espaçamentos, alinhamentos e até animações. Enquanto o HTML cria a estrutura, o CSS deixa o site bonito e organizado visualmente. Por exemplo, com CSS você pode transformar um simples texto em algo estilizado, com cores e layout moderno.</p>
+
+                <p>Já o JavaScript (JS) é a parte interativa. Ele permite que a página responda às ações do usuário, como cliques, preenchimento de formulários ou movimentos do mouse. Com JavaScript, é possível criar menus dinâmicos, validação de formulários, animações avançadas e até aplicações completas dentro do navegador.</p>
+
+                <p>Resumindo:</p>
+
+                <ul>
+                    <li>HTML define o conteúdo</li>
+                    <li>CSS define o estilo</li>
+                    <li>JavaScript define o comportamento</li>
+                </ul>
+
+                <p>Quando essas três tecnologias são usadas juntas, elas permitem criar desde sites simples até aplicações web complexas e interativas.</p></p>
+            </div>
         </article>
         <aside>
             <ul>

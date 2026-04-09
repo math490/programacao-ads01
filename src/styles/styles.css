@@ -22,6 +22,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu {
@@ -131,4 +132,35 @@ footer {
     box-shadow: #00000086 0 0 10px 2px;
     text-shadow: rgba(255, 255, 255, 0.281) 1px 1px;
     margin-top: 20px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+aside {
+    width: 25vh;
+    color: white;
+}
+
+aside a {
+    color: red;
+}
+
+aside ul {
+    width: 15vh;
+    margin-left: 20px;
+}
+
+aside .assunto {
+    height: 75vh;
+}
+
+@media (max-width: 590px) {
+    .centro {
+        flex-wrap: wrap;
+    }
 }
