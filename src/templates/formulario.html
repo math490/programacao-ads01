@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo Formulário</h1>
+    </header>
+    <form>
+        <div class="fields">
+            <hr>
+            <fieldset id="fieldset-one">
+                <legend>Dados Principais:</legend>
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" id="nome" size="50" maxlength="50">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" placeholder="E-mail">
+                <br>
+                <label for="date">Data Nascimento:</label>
+                <br>
+                <input id="date" type="date" max="2022-01-01">
+                <br>
+                <label>Cor/Etnia:</label>
+                <br>
+                <div><input type="radio" name="etnia" value="br"> Branca</div>
+                <br>
+                <div><input type="radio" name="etnia" value="pr"> Preta</div>
+                <br>
+                <div><input type="radio" name="etnia" value="pa"> Parda</div>
+                <br>
+                <div><input type="radio" name="etnia" value="in"> Indigena</div>
+                <br>
+                <div><input type="radio" name="etnia" value="am"> Amarela</div>
+            </fieldset>
+            <hr>
+            <fieldset id="fieldset-two">
+                <legend>Dados Complementares:</legend>
+                <label for="renda">Renda Familiar:</label>
+                <br>
+                <input id="renda" type="number" min="0" step="0.01">
+                <br>
+                <label for="musica">Preferências Musicais:</label>
+                <br>
+                <div><input id="musica" type="checkbox" value="Samba"> Samba</div>
+                <br>
+                <div><input id="musica" type="checkbox" value="Rock"> Rock</div>
+                <br>
+                <div><input id="musica" type="checkbox" value="Sertanejo"> Sertanejo</div>
+                <br>
+                <label for="estado">Estado Natal:</label>
+                <br>
+                <select id="estado">
+                    <option selected disabled>Selecione...</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PR">Paraná</option>
+                </select>
+                <br>
+                <label for="obs">Observações:</label>
+                <br>
+                <textarea id="obs" name="obs" cols="40" rows="10"></textarea>
+            </fieldset>
+        </div>
+            
+        <div class="buttons">
+            <input class="btn" id="enviar" type="submit" value="Enviar">
+            <input class="btn" id="limpar" type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
