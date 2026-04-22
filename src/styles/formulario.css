@@ -9,3 +9,14 @@ header {
 legend {
     text-align: center;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid white;
+    margin-top: 2dvh;
+    & > a {
+        margin-top: 2dvh;
+    }
+}
