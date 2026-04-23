@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/prematricula.css">
+    <title>Exercício de Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Escola Virtual</h1>
+        <h2>Formulário de Pré-Matrícula</h2>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Página Principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <label>
+                    Nome do Aluno: <input type="text">
+                </label>
+                <br>
+                <label>
+                    Nascimento (dd/mm/aaaa): <input type="date">
+                </label>
+                <br>
+                <label>
+                    Nome da Mãe: <input type="text">
+                </label>
+                <br>
+                <label>
+                    Nome do Pai: <input type="text">
+                </label>
+                <br>
+                <label>
+                    Contato: DDD(<input type="number">)
+                </label>
+                <label>
+                    Tel: <input type="number">
+                </label>
+                <label>
+                    Ramal: <input type="number">
+                </label>
+                <br>
+                <label>
+                    Email: <input type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Matrícula:</legend>
+                <div class="row">
+                    <label>
+                        Série:
+                        <select>
+                            <option value="pre-escolar">pré-escolar</option>
+                            <option value="fundamental-I">fundamental I</option>
+                            <option value="fundamental-II">fundamental II</option>
+                            <option value="ensino-medio">ensino médio</option>
+                            <option value="graduacao">graduação</option>
+                        </select>
+                    </label>
+                    <label class="column">
+                        Turno:
+                        <div><input type="radio" name="turno">Manhã</div>
+                        <div><input type="radio" name="turno">Tarde</div>
+                    </label>
+                    <label class="column">
+                        Atividades Extracurriculares:
+                        <div><input type="checkbox">Informática</div>
+                        <div><input type="checkbox">Música</div>
+                        <div><input type="checkbox">Ballet</div>
+                        <div><input type="checkbox">Pintura</div>
+                        <div><input type="checkbox">Judô</div>
+                        <div><input type="checkbox">Futebol</div>
+                    </label>
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input class="btn" id="enviar" type="submit" value="Enviar">
+                <input class="btn" id="limpar" type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
