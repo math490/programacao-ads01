@@ -1,90 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/prematricula.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <title>Exercício de Formulário</title>
 </head>
-<body>
-    <header>
-        <h1>Escola Virtual</h1>
-        <h2>Formulário de Pré-Matrícula</h2>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Página Principal</a></li>
-            </ul>
+
+<body class="w3-container-fluid" style="background-color: rgb(29, 35, 71);">
+    <header class="w3-container-fluid w3-teal w3-center">
+        <div class="w3-container">
+            <h1>Escola Virtual</h1>
+            <h2>Formulário de Pré-Matrícula</h2>
+        </div>
+        <nav class="w3-container-fluid w3-border w3-solid w3-blue" style="display: flex; justify-content: center; align-items: center;">
+            <div class="w3-bar">
+                <a href="../../index.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Página Principal</a>
+                <a href="second.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Página Secundária</a>
+                <a href="formulario.html" class="w3-bar-item w3-button w3-mobile w3-hover-green">Formulário</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <hr>
-        <form>
+    <main class="w3-container w3-margin" style="display: flex; justify-content: center;">
+        <form class="w3-info" style="min-width: 100dvh; max-width: 100dvh;">
             <fieldset>
                 <legend>Dados Pessoais:</legend>
                 <label>
-                    Nome do Aluno: <input type="text">
+                    Nome do Aluno:
                 </label>
+                <input class="w3-input w3-border w3-blue" type="text">
                 <br>
                 <label>
-                    Nascimento (dd/mm/aaaa): <input type="date">
+                    Nascimento (dd/mm/aaaa):
                 </label>
+                <input class="w3-input w3-border w3-blue" type="date">
                 <br>
                 <label>
-                    Nome da Mãe: <input type="text">
+                    Nome da Mãe:
                 </label>
+                <input class="w3-input w3-border w3-blue" type="text">
                 <br>
                 <label>
-                    Nome do Pai: <input type="text">
+                    Nome do Pai:
                 </label>
+                <input class="w3-input w3-border w3-blue" type="text">
+                <br>
+                <div class="w3-row">
+                    <div class="w3-col" style="width: 80px; margin-right: 5px;">
+                        <label>
+                            DDD:
+                        </label>
+                        <input class="w3-input w3-border w3-blue" type="number">
+                    </div>
+                    <div class="w3-col" style="margin-right: 5px; width: 70%;">
+                        <label>
+                            Tel:
+                        </label>
+                        <input class="w3-input w3-border w3-blue" type="number">
+                    </div>
+                    <div class="w3-rest">
+                        <label>
+                            Ramal:
+                        </label>
+                        <input class="w3-input w3-border w3-blue" type="number">
+                    </div>
+                </div>
                 <br>
                 <label>
-                    Contato: DDD(<input type="number">)
+                    Email:
                 </label>
-                <label>
-                    Tel: <input type="number">
-                </label>
-                <label>
-                    Ramal: <input type="number">
-                </label>
-                <br>
-                <label>
-                    Email: <input type="text">
-                </label>
+                <input class="w3-input w3-border w3-blue" type="email">
             </fieldset>
             <fieldset>
-                <legend>Informações de Matrícula:</legend>
-                <div class="row">
-                    <label>
-                        Série:
-                        <select>
+                <legend>bluermações de Matrícula:</legend>
+                <div class="w3-row">
+                    <div class="w3-third" style="padding-right: 10dvh;">
+                        <label>
+                            Série:
+                        </label>
+                        <select class="w3-select">
                             <option value="pre-escolar">pré-escolar</option>
                             <option value="fundamental-I">fundamental I</option>
                             <option value="fundamental-II">fundamental II</option>
                             <option value="ensino-medio">ensino médio</option>
                             <option value="graduacao">graduação</option>
                         </select>
-                    </label>
-                    <label class="column">
-                        Turno:
-                        <div><input type="radio" name="turno">Manhã</div>
-                        <div><input type="radio" name="turno">Tarde</div>
-                    </label>
-                    <label class="column">
-                        Atividades Extracurriculares:
-                        <div><input type="checkbox">Informática</div>
-                        <div><input type="checkbox">Música</div>
-                        <div><input type="checkbox">Ballet</div>
-                        <div><input type="checkbox">Pintura</div>
-                        <div><input type="checkbox">Judô</div>
-                        <div><input type="checkbox">Futebol</div>
-                    </label>
+                    </div>
+                    <div class="w3-third">
+                        <label>
+                            Turno:
+                        </label>
+                        <div class="w3-flex" style="gap: 5px; align-items: center;"><input class="w3-radio"
+                                style="margin-top: -10px;" type="radio" name="turno">
+                            <p>Manhã</p>
+                        </div>
+                        <div class="w3-flex" style="gap: 5px; align-items: center;"><input class="w3-radio"
+                                style="margin-top: -10px;" type="radio" name="turno">
+                            <p>Tarde</p>
+                        </div>
+                    </div>
+                    <div class="w3-third">
+                        <label>
+                            Atividades Extracurriculares:
+                        </label>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Informática</p>
+                        </div>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Música</p>
+                        </div>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Ballet</p>
+                        </div>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Pintura</p>
+                        </div>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Judô</p>
+                        </div>
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                            <p>Futebol</p>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
-            <div class="buttons">
-                <input class="btn" id="enviar" type="submit" value="Enviar">
-                <input class="btn" id="limpar" type="reset" value="Limpar">
+            <div class="w3-center">
+                <input class="btn w3-btn w3-teal w3-border w3-round w3-margin" id="enviar" type="submit" value="Enviar">
+                <input class="btn w3-btn w3-crimson w3-border w3-round w3-margin" id="limpar" type="reset"
+                    value="Limpar">
             </div>
         </form>
     </main>
 </body>
+
 </html>
