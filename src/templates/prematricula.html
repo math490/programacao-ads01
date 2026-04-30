@@ -27,60 +27,60 @@
         <form class="w3-info" style="min-width: 100dvh; max-width: 100dvh;">
             <fieldset>
                 <legend>Dados Pessoais:</legend>
-                <label>
+                <label for="name">
                     Nome do Aluno:
                 </label>
-                <input class="w3-input w3-border w3-blue" type="text">
+                <input class="w3-input w3-border w3-blue" type="text" id="name" name="name" required>
                 <br>
-                <label>
+                <label for="date-nasc">
                     Nascimento (dd/mm/aaaa):
                 </label>
-                <input class="w3-input w3-border w3-blue" type="date">
+                <input class="w3-input w3-border w3-blue" type="date" id="date-nasc" name="date-nasc">
                 <br>
-                <label>
+                <label for="mother">
                     Nome da Mãe:
                 </label>
-                <input class="w3-input w3-border w3-blue" type="text">
+                <input class="w3-input w3-border w3-blue" type="text" id="mother" name="mother">
                 <br>
-                <label>
+                <label for="pai">
                     Nome do Pai:
                 </label>
-                <input class="w3-input w3-border w3-blue" type="text">
+                <input class="w3-input w3-border w3-blue" type="text" id="pai" name="pai">
                 <br>
                 <div class="w3-row">
                     <div class="w3-col" style="width: 80px; margin-right: 5px;">
-                        <label>
+                        <label for="DDD">
                             DDD:
                         </label>
-                        <input class="w3-input w3-border w3-blue" type="number">
+                        <input class="w3-input w3-border w3-blue" type="number" id="DDD" name="DDD">
                     </div>
                     <div class="w3-col" style="margin-right: 5px; width: 70%;">
-                        <label>
+                        <label for="telephone">
                             Tel:
                         </label>
-                        <input class="w3-input w3-border w3-blue" type="number">
+                        <input class="w3-input w3-border w3-blue" type="number" id="telephone" name="telephone">
                     </div>
                     <div class="w3-rest">
-                        <label>
+                        <label for="ramal">
                             Ramal:
                         </label>
-                        <input class="w3-input w3-border w3-blue" type="number">
+                        <input class="w3-input w3-border w3-blue" type="number" id="ramal" name="ramal">
                     </div>
                 </div>
                 <br>
-                <label>
+                <label for="email">
                     Email:
                 </label>
-                <input class="w3-input w3-border w3-blue" type="email">
+                <input class="w3-input w3-border w3-blue" type="email" name="email" id="email" placeholder="seu@email.com" required>
             </fieldset>
             <fieldset>
-                <legend>bluermações de Matrícula:</legend>
+                <legend>Informações de Matrícula:</legend>
                 <div class="w3-row">
                     <div class="w3-third" style="padding-right: 10dvh;">
-                        <label>
+                        <label for="serie">
                             Série:
                         </label>
-                        <select class="w3-select">
+                        <select class="w3-select" id="serie" name="serie">
                             <option value="pre-escolar">pré-escolar</option>
                             <option value="fundamental-I">fundamental I</option>
                             <option value="fundamental-II">fundamental II</option>
@@ -89,38 +89,38 @@
                         </select>
                     </div>
                     <div class="w3-third">
-                        <label>
+                        <label for="turno">
                             Turno:
                         </label>
                         <div class="w3-flex" style="gap: 5px; align-items: center;"><input class="w3-radio"
-                                style="margin-top: -10px;" type="radio" name="turno">
+                                style="margin-top: -10px;" type="radio" name="turno" id="turno">
                             <p>Manhã</p>
                         </div>
                         <div class="w3-flex" style="gap: 5px; align-items: center;"><input class="w3-radio"
-                                style="margin-top: -10px;" type="radio" name="turno">
+                                style="margin-top: -10px;" type="radio" name="turno" id="turno">
                             <p>Tarde</p>
                         </div>
                     </div>
                     <div class="w3-third">
-                        <label>
+                        <label for="atv-ex">
                             Atividades Extracurriculares:
                         </label>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Informática</p>
                         </div>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Música</p>
                         </div>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Ballet</p>
                         </div>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Pintura</p>
                         </div>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Judô</p>
                         </div>
-                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox">
+                        <div class="w3-flex" style="gap:5px;"><input class="w3-checkbox" type="checkbox" id="atv-ex" name="atv-ex">
                             <p>Futebol</p>
                         </div>
                     </div>
@@ -128,8 +128,7 @@
             </fieldset>
             <div class="w3-center">
                 <input class="btn w3-btn w3-teal w3-border w3-round w3-margin" id="enviar" type="submit" value="Enviar">
-                <input class="btn w3-btn w3-crimson w3-border w3-round w3-margin" id="limpar" type="reset"
-                    value="Limpar">
+                <input class="btn w3-btn w3-crimson w3-border w3-round w3-margin" id="limpar" type="reset" value="Limpar">
             </div>
         </form>
     </main>
