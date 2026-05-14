@@ -24,13 +24,14 @@
         </nav>
     </header>
     <main class="w3-container w3-margin" style="display: flex; justify-content: center;">
-        <form class="w3-info" style="min-width: 100dvh; max-width: 100dvh;">
+        <form class="w3-info" id="form1">
             <fieldset>
                 <legend>Dados Pessoais:</legend>
-                <label for="name">
+                <label for="nome">
                     Nome do Aluno:
                 </label>
-                <input class="w3-input w3-border w3-blue" type="text" id="name" name="name" required>
+                <input class="w3-input w3-border w3-blue" type="text" id="nome" name="nome" required>
+                <span id="mens1"></span>
                 <br>
                 <label for="date-nasc">
                     Nascimento (dd/mm/aaaa):
@@ -81,6 +82,7 @@
                             Série:
                         </label>
                         <select class="w3-select" id="serie" name="serie">
+                            <option value="Selecione...">Selecione...</option>
                             <option value="pre-escolar">pré-escolar</option>
                             <option value="fundamental-I">fundamental I</option>
                             <option value="fundamental-II">fundamental II</option>
@@ -132,6 +134,7 @@
             </div>
         </form>
     </main>
+    <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>
