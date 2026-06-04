@@ -18,20 +18,22 @@
 // console.log(nome1.id, nome2.id, nome3.id)
 
 const formulario = document.getElementById("form1");
+const nome = document.getElementById("nome");
+const span1 = document.getElementById("mens1");
+const serie = document.querySelector("#serie");
+const turnos = document.getElementsByName("turno");
+const enviar = document.getElementById("enviar")
+const ativs = Array.from(document.getElementsByClassName("w3-checkbox"))
 
 formulario.onsubmit = function(event) {
     event.preventDefault();
     
-    let nome = document.getElementById("nome");
-    
-    if (nome.value.lengh <= 5) {
-        let span1 = document.getElementById("mens1");
-        span1.innerHTML = "<p>O nome deve ter mais de 5 caracteres!</p>";
-        span1.style.backgroundColor = "yellow";
+    if (nome.value.length <= 5) {
+        span1.innerHTML = "O nome deve ter mais de 5 caracteres!";
+        span1.style.backgroundColor = "red";
         return false;
     };
 
-    let serie = document.getElementById("serie")
     if (serie.value == "Selecione...") {
         serie.setCustomValidity("Selecione uma Série");
         serie.validity = false;
@@ -39,6 +41,27 @@ formulario.onsubmit = function(event) {
         serie.setCustomValidity("");
         serie.validity = true;
     };
+
+    turno_selecionado = false;
+    for(let i = 0; i < turnos.length; i++){
+        if(turnos[i].checked){
+            turno_selecionado = true;
+        }
+    }
+    if(turno_selecionado == false){
+        return false;
+    }
+
+    let atividades = "";
+    ativs.forEach(element => {
+        if(element.checked){
+            if(atividades !== ""){
+                atividades += ", " + element.name;
+            }else {
+                atividades += element.name;
+            }
+        }
+    });
 
     return true;
 

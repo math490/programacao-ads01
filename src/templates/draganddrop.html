@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrastar e Soltar</title>
+    <script src="../scripts/draganddrops.js"></script>
+    <style>
+        #div1, #div2 {
+            width: 210px;
+            height: 70px;
+            padding: 0;
+            border: 1px solid #aaaaaa;
+        }
+        img {
+            width: 210px;
+            height: auto;
+            background-color: #000000;
+        }
+    </style>
+</head>
+
+    <h1>Drag and Drop API</h1>
+
+    <p>Drag the ADS image into the rectangle:</p>
+
+    <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <br>
+    <img id="img1" src="../img/logo-ads-site.png" draggable="true" ondragstart="dragstartHandler(event)">
+    <br>
+    <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+
+</body>
+
+</html>
